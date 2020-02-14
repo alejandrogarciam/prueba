@@ -9,7 +9,7 @@ pipeline {
 		stage('checando docker'){
 			steps{
 				sh 'sudo docker ps'
-			{
-		{
+			}
+		}
 	}
 }
