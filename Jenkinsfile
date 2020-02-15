@@ -17,5 +17,11 @@ pipeline {
 				sh 'sudo docker images|grep php54local'
 			}
 		}
+                stage('desplegar'){
+                        steps{
+                                sh 'sudo docker-compose down'
+                                sh 'sudo docker-compose up -d'
+                        }
+                }
 	}
 }
